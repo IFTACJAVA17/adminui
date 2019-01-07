@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Start from './start.component';
-import Games from './games.component';
+import Games from './games/games.component';
 import Settings from './settings.component';
-import Users from './users.component';
+import Users from './users/users.component';
+import Tournaments from './tournaments/tournaments.component';
 
 const AppRouter = () => (
     <Router>
@@ -12,6 +13,7 @@ const AppRouter = () => (
             <Route path='/Games' component={Games} />
             <Route path='/Settings' component={Settings} />
             <Route path='/Users' component={Users} />
+            <Route path='/Tournaments' component={Tournaments} />
         </div>
     </Router>
 )

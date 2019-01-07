@@ -22,8 +22,15 @@ $bodyFontStack: 'Sintoy', sans-serif;
     text-align: left;
 }
 
+.search-input, .list-control {
+    width: 80vw;
+    margin: auto;
+    margin-top: 0.5em;
+}
+
 h1 {
     font-size: $bl * 2;
+    margin-left: 10vw;
 }
 
 h2 {
@@ -47,13 +54,13 @@ p {
     line-height: $bl;
 }
 
-  .text-admin-primary {
-    color: $primary-admin-color !important;
-  }
+.text-admin-primary {
+color: $primary-admin-color !important;
+}
 
-  .bg-admin-primary {
-    background-color: $primary-admin-color !important;
-  }
+.bg-admin-primary {
+background-color: $primary-admin-color !important;
+}
   
 .admin-primary {
     background-color: $primary-admin-color;
@@ -67,7 +74,6 @@ p {
 .admin-secondary {
     background-color: $secondary-admin-color;
     color: $white-admin-color;
-    border: 1px solid $white-admin-color;
 
     & h5 {
         color: $white-admin-color
@@ -179,6 +185,63 @@ label {
 
     & .paragraphInfo > p {
         color: lighten($black-admin-color, 45%);
+    }
+}
+
+.btn {
+    margin: 1em;
+    padding: .5em 2em;
+    box-shadow: 2px 1px 1px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success {
+    background-color: $primary-color;
+    border-color: darken($primary-color, 10%);
+    color: $secondary-color;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+        border-color: darken($primary-color, 20%);
+        color: $secondary-color;
+    }
+}
+
+.btn-default {
+    background-color: $white-color;
+    border-color: darken($white-color, 10%);
+    color: $secondary-color;
+
+    &:hover{
+        background-color: darken($white-color, 10%);
+        border-color: darken($white-color, 20%);
+        color: $secondary-color;
+    }
+}
+
+.btn-info {
+    background-color: $accent-light-color;
+    border-color: darken($accent-light-color, 10%);
+    color: $black-color;
+
+    &:hover{
+        background-color: darken($accent-light-color, 10%);
+        border-color: darken($accent-light-color, 20%);
+        color: $black-color;
+    }
+}
+
+.btn-warning {
+    background-color: $accent-color;
+    border-color: darken($accent-color, 10%);
+    color: $black-color;
+
+    &:hover{
+        background-color: darken($accent-color, 10%);
+        border-color: darken($accent-color, 20%);
+        color: $black-color;
     }
 }
 
