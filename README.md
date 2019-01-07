@@ -1,6 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # ADMIN UI
+Fully working implemenation of a admin ui. Developed as a part of a course project. 
+The ui is using [json-server](https://github.com/typicode/json-server) for mocking the not yet developed backend.
 
 ## Installation
 
