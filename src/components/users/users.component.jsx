@@ -22,7 +22,6 @@ export default class Users extends Component {
         request.get(constants.API_URL + 'users').end((err,res) => {
             if(err) { console.log(err.body); return }
             this.setState({usersData: res.body});
-            console.log(res.body);
         });
     }
 

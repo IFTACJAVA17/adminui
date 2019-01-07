@@ -43,14 +43,12 @@ export default class Tournament extends Component {
     }
 
     toggleSettings() {
-        console.log('toggle settings');
         this.setState({ collapse: !this.state.collapse });
     }
 
     submitChanges(event) {
         event.preventDefault();
         const { name, game, tournament, registeredUsers } = this.state;
-        console.log(this.state.startTime)
         const start = this.parseDateAndTime(this.state.startDate, this.state.startTime);
         const end = this.parseDateAndTime(this.state.endDate, this.state.endTime);
         let newData = {
@@ -72,7 +70,6 @@ export default class Tournament extends Component {
         const { target } = event;
         const value = target.type === 'checkbox' ? target.checked : target.value;
         const { name } = target;
-        console.log(name);
         await this.setState({
             [name]: value,
         });

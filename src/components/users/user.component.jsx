@@ -22,7 +22,6 @@ export default class User extends Component {
     }
 
     toggleSettings() {
-        console.log('toggle user settings');
         this.setState({ collapse: !this.state.collapse });
     }
 
@@ -51,7 +50,6 @@ export default class User extends Component {
         const { target } = event;
         const value = target.type === 'checkbox' ? target.checked : target.value;
         const { name } = target;
-        console.log(name);
         await this.setState({
             [name]: value,
         });
